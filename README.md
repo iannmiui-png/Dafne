@@ -1,5 +1,5 @@
 # ROTASPEN DAFNEBR0
-<img width="768" height="132" alt="DAFNE_ET_CETERA" src="https://github.com/user-attachments/assets/3582d72c-f399-4c55-9249-3b9a09cab581" />
+<img width="768" height="132" alt="DAFNE_ET_CETERA" src="https://github.com/user-attachments/assets/3582d72c-f399-4c55-9249-3b9a09cab581" /><br>
 ROTAS DAFNE OPERA ABRDN<br>
 <img width="192" height="33" alt="dafne" src="https://github.com/user-attachments/assets/d3e9772c-3e4b-4afc-b08d-89261577e3bc" /><br>
 TENET FR0RF AREPO<br>
