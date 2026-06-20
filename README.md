@@ -3,7 +3,7 @@
 ROTAS DAFNE OPERA ABRDN<br>
 <img width="192" height="33" alt="dafne" src="https://github.com/user-attachments/assets/d3e9772c-3e4b-4afc-b08d-89261577e3bc" /><br>
 TENET FR0RF AREPO<br>
-[DAFNE.bmp](https://github.com/user-attachments/files/29166357/DAFNE.bmp) <br>
+[DAFNE.bmp](https://github.com/user-attachments/files/29166357/DAFNE.bmp) <img width="428" height="62" src="DAFNE.png" /> <br>
 <img width="192" height="5" alt="distinctions" src="https://github.com/user-attachments/assets/afa272cf-c2b4-452f-abf9-796c8092f5ab" /><br>
 NDRBA SATOR<br>
 [6030.bmp](https://github.com/user-attachments/files/29166348/6030.bmp) [60302.bmp](https://github.com/user-attachments/files/29166351/60302.bmp)ENFAD<br>[60303pv.bmp](https://github.com/user-attachments/files/29166354/60303pv.bmp) 
