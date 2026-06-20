@@ -1,4 +1,5 @@
 # ROTASPEN DAFNEBR0
+<img width="192" height="33" alt="dafne" src="https://github.com/user-attachments/assets/d3e9772c-3e4b-4afc-b08d-89261577e3bc" />
 ROTAS DAFNE
 OPERA ABRDN
 TENET FR0RF
