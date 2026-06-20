@@ -8,7 +8,7 @@ TENET FR0RF AREPO<br>
 NDRBA SATOR<br>
 <img width="60" height="30" alt="6030" src="6030.png" /> <img width="60" height="30" alt="6030" src="60302.png" /><br>
 [6030.bmp](https://github.com/user-attachments/files/29166348/6030.bmp) [60302.bmp](https://github.com/user-attachments/files/29166351/60302.bmp)<br>ENFAD<br>
-[60303p.bmp](https://github.com/user-attachments/files/29166527/60303p.bmp)<br>
+[60303p.bmp](https://github.com/user-attachments/files/29166527/60303p.bmp)<br><img width="62" height="28" alt="60303p" src="60303p.png" /><br>
 <br>[60303pv.bmp](https://github.com/user-attachments/files/29166354/60303pv.bmp) <br>
 <img width="28" height="62" alt="60303pv" src="60303pv.png" /><br>
 <img width="20" height="768" alt="distinctionsASCII" src="https://github.com/user-attachments/assets/26d47470-738b-471f-a3df-9935ac128c3a" /><br>
