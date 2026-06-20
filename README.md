@@ -1,10 +1,10 @@
 # ROTASPEN DAFNEBR0<br>
 ###############<br>
-##ROTAS DAFNE##<br>
-##OPERA ABRDN##<br>
-##TENET FR0RF##<br>
-##AREPO NDRBA##<br>
-##SATOR ENFAD##<br>
+##ROTAS#DAFNE##<br>
+##OPERA#ABRDN##<br>
+##TENET#FR0RF##<br>
+##AREPO#NDRBA##<br>
+##SATOR#ENFAD##<br>
 ###############<br>
 <img width="768" height="132" alt="DAFNE_ET_CETERA" src="https://github.com/user-attachments/assets/3582d72c-f399-4c55-9249-3b9a09cab581" /><br>
 ROTAS DAFNE OPERA ABRDN<br>
