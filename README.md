@@ -7,7 +7,7 @@
 ##SATOR#ENFAD##<br>
 ###############<br>
 P5<br>
-# Lindenmayer curve (⚠️Warning! Flashing images below L-curve.)
+# Lindenmayer curve <br>(⚠️Warning! Flashing images below L-curve.)
 64 117<br>
 255<br>
 333343343333333333333333333333333B<br>
