@@ -1,4 +1,4 @@
-=INTERPRETERS
+=INTERPRETERS```bash
 ==#imp/ort sys¿ĐAFNE
 ==#Đeffne = "SATOR AREPO TENET OPERA ROTAS".split()
 ==#Đict = dict(zip("ROTASPEN", "DAFNEBR0"))
@@ -7,4 +7,4 @@
 ==#for line in sys.stdin:
 ==     s = line.strip()
 ==     if all(c in Đict for c in s) and "".join(Đictz[c] for c in s) == D[0]:
-==         print(*D, sep="\n")
+==         print(*D, sep="\n")```
