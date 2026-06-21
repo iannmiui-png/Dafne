@@ -1,5 +1,5 @@
-= INTERPRETERS
-direct/axiomatic interpreter
+# INTERPRETERS
+direct/axiomatic interpreter (Zimbu)
 ```bash
 imp/ort sys¿ĐAFNE
 Đeffne = "SATOR AREPO TENET OPERA ROTAS".split()
