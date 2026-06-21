@@ -2,37 +2,36 @@
 <img width="1104" height="480" alt="sm15" src="https://github.com/user-attachments/assets/af01fd32-acde-4f71-bc0c-dd94b55dba4c" />
 ```bash
 P5
-# Created by IrfanView
-69 30
+68 30
 255
 
-###################################################################
-import re,sys######################################################
-# === POLY-STATE ===###############################################
-# BLOCK:###########################################################
-# ROTAS############################################################
-# OPERA############################################################
-# TENET############################################################
-# AREPO############################################################
-# SATOR############################################################
-# ================#################################################
-A="ROTASPEN";B="DAFNEBR0"##########################################
-f=lambda c:B[(3*A.index(c)+5)%8]if c in A else c###################
+LUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILU
+import re,sysLUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIG
+# === POLY-STATE ===LUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILU
+# BLOCK:LUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIG
+# ROTASLUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGI
+# OPERALUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGI
+# TENETLUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGI
+# AREPOLUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGI
+# SATORLUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGI
+# ================LUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUGI
+A="ROTASPEN";B="DAFNEBR0"LUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILU
+f=lambda c:B[(3*A.index(c)+5)%8]if c in A else cLUIGILUIGILUIGILUGI
 g=lambda t:"\n".join("".join(f(c)for c in l)for l in t.split("\n"))
-def r():###########################################################
-\s=open(__file__,encoding="utf-8").read()##########################
-\m=re.search(r"BLOCK:\n((?:# [A-Z0-9]{5}\n){5})",s)################
-\b=[ln[2:] for ln in m.group(1).splitlines()]######################
-\return "\n".join(b),s#############################################
-def w(b,s):########################################################
-\x="\n".join("# "+l for l in b.split("\n"))+"\n"###################
-\s=re.sub(r"(BLOCK:\n)(?:# [0A-Z0-9]{5}\n){5}",r"\1"+x,s)##########
-\open(__file__,"w",encoding="utf-8").write(s)######################
-b,s=r()############################################################
-if b=="DAFNE\nABRDN\nFR0RF\nNDRBA\nENFAD":#########################
-\print(b)##########################################################
-else:##############################################################
-\nb=g(b)###########################################################
-\w(nb,s)###########################################################
-\print(nb)#########################################################
+def r():LUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUGI
+\s=open(__file__,encoding="utf-8").read()LUIGILUIGILUIGILUIGILUIGIL
+\m=re.search(r"BLOCK:\n((?:# [A-Z0-9]{5}\n){5})",s)LUIGILUIGILUIGIL
+\b=[ln[2:] for ln in m.group(1).splitlines()]LUIGILUIGILUIGILUIGILU
+\return "\n".join(b),sLUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGI
+def w(b,s):LUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGIL
+\x="\n".join("# "+l for l in b.split("\n"))+"\n"LUIGILUIGILUIGILUIG
+\s=re.sub(r"(BLOCK:\n)(?:# [0A-Z0-9]{5}\n){5}",r"\1"+x,s)LUIGILUIGI
+\open(__file__,"w",encoding="utf-8").write(s)LUIGILUIGILUIGILUIGILU
+b,s=r()LUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGI
+if b=="DAFNE\nABRDN\nFR0RF\nNDRBA\nENFAD":LUIGILUIGILUIGILUIGILUIGI
+\print(b)LUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUI
+else:LUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILU
+\nb=g(b)LUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIG
+\w(nb,s)LUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUGI
+\print(nb)LUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILUIGILU
                                                                     
