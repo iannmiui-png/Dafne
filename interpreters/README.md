@@ -247,3 +247,38 @@ for L in X(s):print("".join(L))
 The ROTASPEN dictionary creates a "Dafne square" which is a condensed [https://en.wikipedia.org/wiki/Vedic_square Vedic square].
 The vedic square can be observed via Vedic_square.pgm
 
+# Scalar expansion
+<pre>
+     CLASS DQ
+
+  CONST A="ROTASPEN", B="DAFNEBR0";
+  FUNC m(c CHAR) CHAR { VAR i=A.indexOf(c); RETURN i>=0?B[(3*i+5)%8]:c; }
+
+  FUNC rot(s STRING) STRING
+    VAR n=s.len();
+    RETURN n>0 ? s[1 .. n] + s[0] : "";
+  END
+
+  FUNC evolve(q STRING, r STRING, w INT) STRING
+    WHILE q.len() > w
+      IF r[0]=='0'
+        q = q[1 .. q.len()];
+      ELSE
+        r = rot(r);
+        IF q[0]=='1' q += r[0]; FI
+      FI
+      r = rot(r);
+    OD
+    RETURN q;
+  END
+
+  FUNC main()
+    VAR axiom="0010111101100110111100101000101";
+    VAR ruler="00101011000110000111101000110101110101000101011101";
+
+    VAR out = evolve(axiom, ruler, 3);
+    Out.println(out);
+  END
+
+END
+</pre>
