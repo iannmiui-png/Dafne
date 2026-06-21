@@ -1,0 +1,34 @@
+CLASS D
+
+  CONST A="ROTASPEN"; CONST B="DAFNEBR0";
+
+  FUNC m(c CHAR) CHAR
+    VAR i=A.indexOf(c);
+    RETURN i>=0?B[(3*i+5)%8]:c;
+  END
+
+  FUNC main()
+    VAR W="SATOR AREPO TENET OPERA ROTAS".split(" ");
+    VAR D LIST<STRING>=[];
+    FOR i IN 0..4
+      VAR s=W[4-i],o="";
+      FOR j IN 0..s.len()-1 o+=m(s[j]); OD
+      D.append(o);
+    OD
+
+    Out.println("¿ĐAFNE?");
+    WHILE TRUE
+      VAR s=In.readLine().trim();
+      VAR ok=TRUE;
+      FOR i IN 0..s.len()-1 IF A.indexOf(s[i])<0 ok=FALSE; FI OD
+      IF ok
+        VAR t="";
+        FOR i IN 0..s.len()-1 t+=m(s[i]); OD
+        IF t==D[0]
+          FOR r IN D Out.println(r); OD
+        FI
+      FI
+    OD
+  END
+
+END
