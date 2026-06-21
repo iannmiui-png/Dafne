@@ -25,7 +25,7 @@ CLASS DQ
     VAR axiom="0010111101100110111100101000101";
     VAR ruler="00101011000110000111101000110101110101000101011101";
 
-    VAR out = evolve(axiom, ruler, 3);
+    VAR out = evolve(axiom, ruliad, 3);
     Out.println(out);
   END
 
