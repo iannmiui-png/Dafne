@@ -1,4 +1,5 @@
-INTERPRETERS```bash
+INTERPRETERS
+```bash
 imp/ort sys¿ĐAFNE
 Đeffne = "SATOR AREPO TENET OPERA ROTAS".split()
 Đict = dict(zip("ROTASPEN", "DAFNEBR0"))
