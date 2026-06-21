@@ -1,0 +1,45 @@
+#!SELF-MODIFYING
+import re,sys
+
+# ===============
+# BLOCK:
+# ROTAS
+# OPERA
+# TENET
+# AREPO
+# SATOR
+# BDFBR
+# D00BB
+# F0F0F
+# BB00D
+# RBFDB
+# BDNRA
+# DE0BR
+# N0F0N
+# RB0ED
+# ARNDB
+# ===============
+
+A="ROTASPEN";B="DAFNEBR0"
+f=lambda c:B[(3*A.index(c)+5)%8]if c in A else c
+g=lambda t:"\n".join("".join(f(c)for c in l)for l in t.split("\n"))
+
+def r():
+ s=open(__file__,encoding="utf-8").read()
+ m=re.search(r"BLOCK:\n((?:# [A-Z0-9]{5}\n){5})",s)
+ b=[ln[2:] for ln in m.group(1).splitlines()]
+ return "\n".join(b),s
+
+def w(b,s):
+ x="\n".join("# "+l for l in b.split("\n"))+"\n"
+ s=re.sub(r"(BLOCK:\n)(?:# [A-Z0-9]{5}\n){5}",r"\1"+x,s)
+ open(__file__,"w",encoding="utf-8").write(s)
+
+b,s=r()
+
+if b=="DAFNE\nABRDN\nFR0RF\nNDRBA\nENFAD":
+ print(b)
+else:
+ nb=g(b)
+ w(nb,s)
+ print(nb)
