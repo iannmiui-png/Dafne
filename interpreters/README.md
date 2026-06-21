@@ -12,114 +12,35 @@ for line in sys.stdin:
          print(*D, sep="\n")```
 self-modifying
 ```bash
-// dafne.HC
+// CLASS D
 
-U8 *A = "ROTASPEN";
-U8 *B = "DAFNEBR0";
+  CONST A="ROTASPEN",B="DAFNEBR0";
 
-U8 MapChar(U8 c)
-{
-  I64 i;
-  for (i = 0; A[i]; i++)
-    if (A[i] == c)
-      return B[(3*i + 5) % 8];
-  return c;
-}
+  FUNC M(c CHAR) CHAR { VAR i=A.indexOf(c); RETURN i<0?c:B[(3*i+5)%8]; }
 
-U8 *MapBlock(U8 *t)
-{
-  U8 *out = "";
-  U8 **lines = StrSplit(t, "\n");
-  I64 i, j;
+  FUNC T(s STRING) STRING
+    VAR o=""; FOR i IN 0..s.len()-1 o+=M(s[i]); OD RETURN o;
+  END
 
-  for (i = 0; lines[i]; i++) {
-    U8 *row = "";
-    for (j = 0; lines[i][j]; j++)
-      row = Cat(row, Chr(MapChar(lines[i][j])));
-    out = Cat(out, row);
-    out = Cat(out, "\n");
-  }
-  return out;
-}
+  FUNC E() LIST<STRING>
+    VAR W="SATOR AREPO TENET OPERA ROTAS".split(" "),D LIST<STRING>=[];
+    FOR i IN 0..4 D.append(T(W[4-i])); OD
+    RETURN D;
+  END
 
-U0 ReadState(I64 *step, U8 **block, U8 **src)
-{
-  *src = FileRead("dafne.HC");
-  U8 *s = *src;
+  FUNC main()
+    VAR D=E();
+    Out.println("¿ĐAFNE?");
+    WHILE TRUE
+      VAR s=In.readLine().trim();
+      IF s.len()>0
+        IF T(s)==D[0]
+          FOR r IN D Out.println(r); OD
+        FI
+      FI
+    OD
+  END
 
-  // Extract STEP
-  U8 *p = StrFind(s, "#STEP:");
-  *step = Atoi(p+6);
+END
 
-  // Extract 5‑letter blocks after the first one
-  U8 *q = s;
-  I64 count = 0;
-  U8 *acc = "";
-
-  while (q = StrFind(q, "#")) {
-    if (q[1] && q[2] && q[3] && q[4] && q[5] &&
-        q[1] >= 'A' && q[1] <= 'Z') {
-
-      if (count > 0) {
-        U8 tmp[6];
-        MemCpy(tmp, q+1, 5);
-        tmp[5] = 0;
-        acc = Cat(acc, tmp);
-        acc = Cat(acc, "\n");
-      }
-      count++;
-    }
-    q++;
-  }
-
-  *block = acc;
-}
-
-U0 WriteState(I64 step, U8 *block, U8 *src)
-{
-  U8 *out = src;
-
-  // Replace STEP
-  {
-    U8 buf[64];
-    Sprint(buf, "#STEP:%d", step);
-    out = StrReplace(out, "#STEP:", buf);
-  }
-
-  // Replace block region starting at #ROTAS
-  {
-    U8 *blk = "";
-    U8 **lines = StrSplit(block, "\n");
-    I64 i;
-    for (i = 0; lines[i]; i++) {
-      blk = Cat(blk, "#");
-      blk = Cat(blk, lines[i]);
-      blk = Cat(blk, "\n");
-    }
-    out = StrReplaceRegex(out, "#ROTAS(.|\n)*", blk);
-  }
-
-  FileWrite("dafne.HC", out);
-}
-
-U0 Main()
-{
-  I64 k;
-  U8 *b, *s;
-
-  ReadState(&k, &b, &s);
-
-  if (k < 15) {
-    WriteState(k+1, MapBlock(b), s);
-  } else {
-    Print("¿ĐAFNE?\n");
-    Print("DAFNE\nABRDN\nFR0RF\nNDRBA\nENFAD\n");
-  }
-
-  while (TRUE) {
-    U8 *L = GetStr();
-    if (!StrCmp(StrTrim(L), "DAFNE"))
-      Print("DAFNE\n");
-  }
-}
 ```
