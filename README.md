@@ -1,3 +1,4 @@
+<img width="350" height="200" alt="dafne_expansion_cycle" src="https://github.com/user-attachments/assets/75fef2a7-d5e9-48ea-8fb1-ba617df1d6c4" />
 https://github.com/iannmiui-png/Dafne
 <a href="https://iannmiui-png.github.io/Dafne/interpreters/">https://iannmiui-png.github.io/Dafne/interpreters/</a>
 # ROTASPEN DAFNEBR0<br>
